@@ -1,0 +1,19 @@
+{
+	"name": "{{ cookiecutter.package_dir }}",
+	"version": "{{ cookiecutter.version }}",
+	"description": "{{ cookiecutter.description }}",
+	"main": "{{ cookiecutter.main }}",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"compile": "tsc",
+		"app": "tsc && node {{ cookiecutter.out_dir }}/{{ cookiecutter.main }}",
+		"start": "npx nodemon {{ cookiecutter.root_dir }}/{{ cookiecutter.typescript }}"
+	},
+	"compilerOptions": {
+		"outDir": "./{{ cookiecutter.out_dir }}",
+		"rootDir": "./{{ cookiecutter.root_dir }}"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

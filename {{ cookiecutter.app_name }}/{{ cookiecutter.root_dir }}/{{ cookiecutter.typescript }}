@@ -1,0 +1,15 @@
+const world = 'world';
+
+export function hello(who: string = world): string {
+  return `Hello ${who}! `;
+}
+
+console.log(hello());
+console.log(hello('4U9UUU'));
+console.log(hello('UU4UUU'));
+console.log(hello('UU6UUU'));
+console.log(hello('UU16UUU'));
+console.log(hello('UU9UUU'));
+console.log(hello('UU9UUU'));
+console.log(hello('UUUUUU'));
+console.log(hello('UUUUU5'));

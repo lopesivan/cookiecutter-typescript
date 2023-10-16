@@ -1,0 +1,10 @@
+{
+	"app_name": "my_app",
+	"version": "1.0.0",
+	"description": "meu projeto typescript",
+	"main": "index.js",
+	"out_dir": "build/src",
+	"root_dir": "src",
+	"package_dir": "{{ cookiecutter.app_name | replace(' ', '_') }}",
+	"typescript": "{{ cookiecutter.main | replace('.js', '.ts') }}"
+}
